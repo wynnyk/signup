@@ -1,0 +1,220 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(Norse-Bold.otf) format("opentype");
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Add any other custom styles as needed */
+  }
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    background-image: url('stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the div */
+    width: 40vw;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    flex: 1;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(239, 234, 234);
+    height: 40%;
+    min-height: 200px;
+    padding-right: 80px;
+}
+
+.toptext {
+    opacity: 0.7;
+    font-size: x-large;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+
+.second{
+    margin-bottom: 50px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 250px;
+    min-height: 250px;
+    padding-left: 40px;
+}
+
+.middleheader {
+    opacity: 0.7;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.bottom {
+    background-color: rgb(239, 234, 234);
+    height: 35%;
+    flex: 1;
+    min-height: 100px;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.firstrow {
+    display: flex;
+    flex: 1;
+}
+
+.secondrow {
+    display: flex;
+}
+
+.thirdrow {
+    display: flex;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 80px;
+}
+
+input {
+    height: 100%;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.firstrow,
+.second,
+.thirdrow {
+    width: 100%;
+}
+
+label {
+    font-size: small;
+    opacity: 0.6;
+    padding-bottom: 2px;
+}
+
+input {
+    padding: 3px;
+    background-color: rgb(239, 234, 234);
+}
+
+.create {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 40px;
+    color: #173679;
+    background-color: rgb(239, 234, 234);
+    border: 3px solid #173679;
+    border-radius: 6px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.create:hover {
+    color: rgb(239, 234, 234);
+    background-color: #173679;
+}
+
+.bottomgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+a {
+    color: #173679;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: large;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%; /* Adjust the percentage value as needed */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-shrink: 1;
+}
+
+.bannertext {
+    color: white;
+    font-size: 80px;
+    font-family: "Norse-Bold", sans-serif;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.odinpic {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    align-self: center;
+}
+
+input {
+    border: 2px solid black;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+  
+  input:valid {
+    border: 2px solid green;
+  }
+
+  .error {
+    padding-top: 2px;
+    height: 10px;
+    font-size: x-small;
+  }
+

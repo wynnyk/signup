@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="Norse-Bold.otf" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <div class="banner">
+                <img class="odinpic" src="odin-lined.png" alt="odinpic">
+                <h1 class="bannertext">ODIN</h1>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <h1 class="toptext first">This is not a real online service! You know you need something like this in your life to help you realize your deepest dream. Sign up now to get started</h1>
+            <h1 class="toptext second">You know you want to.</h1>
+        </div>
+        <div class="middle">
+            <h1 class="middleheader">Let's do this!</h1>
+            <div class="formdiv">
+                <form action="">
+                    <div class="firstrow">
+                        <div class="formgroup">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname"  pattern="^[^0-9]+$" required>
+                            <span id="firsError" class="error"></span>    
+                        </div>
+                        <div class="formgroup">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname"  pattern="^[^0-9]+$" required>
+                            <span id="secondError" class="error"></span> 
+                        </div>
+                    </div>
+                    <div class="secondrow">
+                        <div class="formgroup">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required>
+                            <span id="emailError" class="error"></span>
+                        </div>
+                        <div class="formgroup">
+                            <label for="number">PHONE NUMBER</label>
+                            <input type="tel" id="number" required>
+                            <span id="phoneError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="thirdrow">
+                        <div class="formgroup">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                            <span id="passwordError" class="error"></span>
+                        </div>
+                        <div class="formgroup">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm" required>
+                            <span id="confirmError" class="error"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottomgroup">
+                <button type="submit" class="create">Create Account</button>
+                <h4>Already have an account? <a href="">Log in</a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
